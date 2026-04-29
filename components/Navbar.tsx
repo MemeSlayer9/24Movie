@@ -52,11 +52,7 @@ const GenresIcon = () => (
   </svg>
 );
 
-const AndroidIcon = () => (
-  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24c-2.86-1.21-6.08-1.21-8.94 0L5.65 5.67c-.19-.28-.54-.37-.83-.22-.3.16-.42.54-.26.85l1.84 3.18C4.08 11.36 2.5 14.34 2.5 17.5h19c0-3.16-1.58-6.14-3.9-8.02zM7 15.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm10 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" />
-  </svg>
-);
+ 
 
 const MenuIcon = () => (
   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -112,8 +108,7 @@ export default function Navbar() {
     { name: "Genres",      icon: <GenresIcon />,   href: "/List/Genres" },
     { name: "Schedule",    icon: <CalendarIcon />, href: "/List/Schedule" },
     { name: "AnimeChart",  icon: <ChartIcon />,    href: "/List/AnimeChart" },
-    { name: "AndroidApp",  icon: <AndroidIcon />,  href: "/List/AndroidApp" },
-  ];
+   ];
 
   // Close suggestions when clicking outside
   useEffect(() => {
